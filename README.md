@@ -2,4 +2,4 @@
 
 The website for EyeT smart glasses.
 
-Ivan Zeljkovic - 300092334
+Ivan Daniel Zeljkovic - 300092334
