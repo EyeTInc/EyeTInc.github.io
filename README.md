@@ -4,12 +4,12 @@ EyeT glasses are a pair of augmented reality glasses that allow you to enhance y
 
 # Team Members
 
-Ivan Zeljkovic - 300092334
+Ivan Zeljkovic @idzidz - 300092334
 
-Ovais Azeem - 300112311
+Ovais Azeem @Ovais09 - 300112311
 
 Ajay Ramachandran @ajayyy - 300109765
 
-Rachel Jamer - 0300116564
+Rachel Jamer @racheljamer - 0300116564
 
-Carina Tam - 300105372
+Carina Tam @twaeyoung- 300105372
