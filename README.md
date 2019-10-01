@@ -4,7 +4,7 @@ The website for EyeT smart glasses.
 
 # Team Members
 
-Ivan Zeljkovic - 300092334
+Ivan Zeljkovic @idzidz - 300092334
 
 Ovais Azeem - 300112311
 
