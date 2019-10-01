@@ -1,6 +1,6 @@
 # EyeT
 
-The website for EyeT smart glasses.
+EyeT glasses are a pair of augmented reality glasses that allow you to enhance your living experience. These glasses provide information to you without you having to use your phone. You can get important information seamlessly with just a lift of your head.
 
 # Team Members
 
