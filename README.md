@@ -6,7 +6,7 @@ The website for EyeT smart glasses.
 
 Ivan Zeljkovic - 300092334
 
-Ovais Azeem - 300112311
+Ovais Azeem @Ovais09 - 300112311
 
 Ajay Ramachandran @ajayyy - 300109765
 
