@@ -10,6 +10,6 @@ Ovais Azeem @Ovais09 - 300112311
 
 Ajay Ramachandran @ajayyy - 300109765
 
-Rachel Jamer - 0300116564
+Rachel Jamer @racheljamer - 0300116564
 
 Carina Tam @twaeyoung- 300105372
