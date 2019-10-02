@@ -1,6 +1,5 @@
 * {
     font-family: Arial;
-    background-color: white;
 }
 
 .center {
@@ -12,15 +11,45 @@ p {
     margin: 0 auto;
 }
 
+#header {
+    padding: 10px;
+
+    padding-bottom: 25px;
+
+    font-size: 20px;
+}
+
 .right {
     float: right;
 }
 
 .links {
-    padding-left: 5px;
-    padding-right: 5px;
+    margin-right: 25px;
+
 }
 
-#header {
-    padding: 10px;
+body {
+    background-color: #77ccf7;
+}
+
+#image-header {
+    background-image: url("../images/background.jpeg");
+
+    height: 500px;
+
+    box-shadow: 0 0 30px 40px #77ccf7 inset;
+}
+
+#header-text {
+    text-align: center;
+
+    font-size: 75px;
+
+    color: white;
+
+    /* Vertically align https://stackoverflow.com/a/20563075/1985387 */
+    display:flex;
+    height: 100%; 
+    align-items: center;
+    justify-content: center;
 }
