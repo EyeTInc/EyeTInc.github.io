@@ -62,15 +62,23 @@ body {
 }
 
 #header-text-container {
-    position: absolute;
+    text-align: center;
 }
 
 #header-text {
     position: absolute;
 
-    font-size: 75px;
+    /* For proper centering (parent ignores this divs size) */
+    display: inline-block;
+    transform: translate(-50%);
+
+    padding: 5px 30px;
+
+    font-size: 100px;
 
     color: white;
+
+    background-color: rgba(255, 255, 255, .5);
 }
 
 /* slider images */
@@ -99,7 +107,7 @@ body {
 .slider-image#before-image {
     background-image: url("../images/before.jpg");
 
-    border-right: 5px solid black;
+    border-right: 10px solid black;
 }
 
 .slider-image#after-image {

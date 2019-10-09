@@ -1,11 +1,10 @@
-
 var mouseX = -1;
 
-var imageWidth;
+var sliderImageWidth;
 
 function init() {
     //make it the page width until the actual width is loaded
-    imageWidth = document.body.clientWidth
+    sliderImageWidth = document.body.clientWidth
 
     let container = document.getElementById("slider-container")
 
@@ -13,13 +12,14 @@ function init() {
     let image = new Image();
     image.src = "images/before.jpg";
     image.onload = () => {
-        imageWidth = image.width;
-        container.style.width = imageWidth + "px"
+        sliderImageWidth = image.width;
+        container.style.width = sliderImageWidth + "px"
     };
 
     //update mouse position
     container.addEventListener("mousemove", function(ev) {
-        mouseX = ev.offsetX;
+        mouseX = ev.clientX;
+        console.log(mouseX)
     });
 
     // runs the animations of the slider
@@ -38,8 +38,11 @@ function updateSlider() {
     }
 
     let image = document.getElementById("before-image");
+    let margin = 12;
 
-    let targetWidth = mouseX / imageWidth * 100;
+    let localX = mouseX - (document.body.clientWidth / 2 - sliderImageWidth / 2 + margin)
+
+    let targetWidth = localX / sliderImageWidth * 100;
     //don't go over 100%
     if (targetWidth > 100) {
         targetWidth = 100;
