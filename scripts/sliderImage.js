@@ -1,8 +1,21 @@
 
 var mouseX = -1;
 
+var imageWidth;
+
 function init() {
+    //make it the page width until the actual width is loaded
+    imageWidth = document.body.clientWidth
+
     let container = document.getElementById("slider-container")
+
+    //set container to proper size
+    let image = new Image();
+    image.src = "images/before.jpg";
+    image.onload = () => {
+        imageWidth = image.width;
+        container.style.width = imageWidth + "px"
+    };
 
     //update mouse position
     container.addEventListener("mousemove", function(ev) {
@@ -26,7 +39,11 @@ function updateSlider() {
 
     let image = document.getElementById("before-image");
 
-    let targetWidth = mouseX / document.body.clientWidth * 100;
+    let targetWidth = mouseX / imageWidth * 100;
+    //don't go over 100%
+    if (targetWidth > 100) {
+        targetWidth = 100;
+    }
 
     //this is in the form of a percentage in a string
     let previousWidthFormatted = image.style.width;
