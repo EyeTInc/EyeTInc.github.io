@@ -12,15 +12,19 @@ p {
 }
 
 #header {
-    padding: 10px;
+    padding: 20px;
 
     padding-bottom: 25px;
 
     font-size: 20px;
-}
 
+    background-color: lightgray;
+    
+}
 .right {
     float: right;
+    line-height: 70px;
+    vertical-align: middle;
 }
 
 .links {
@@ -58,7 +62,8 @@ p {
 
 body {
     /* Add underline animation */
-    background-color: #77ccf7;
+    background-color: white;
+    margin:0;
 }
 
 #image-header {
@@ -81,4 +86,20 @@ body {
     height: 100%;
     align-items: center;
     justify-content: center;
+}
+
+#general-header{
+    text-align: left;
+    font-size: 35px;
+    color: #808080;
+}
+
+form{
+    display:inline-block;
+    text-align: left;
+    float: right;
+    padding-right: 20px;
+    font-size: 25px;
+    color: #808080;
+
 }
