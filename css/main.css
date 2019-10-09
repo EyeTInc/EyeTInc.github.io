@@ -86,7 +86,7 @@ body {
 #slider-container {
     position: relative;
 
-    height: 500px;
+    height: 550px;
 
     left: 50%;
     transform: translateX(-50%);

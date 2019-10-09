@@ -19,7 +19,6 @@ function init() {
     //update mouse position
     container.addEventListener("mousemove", function(ev) {
         mouseX = ev.clientX;
-        console.log(mouseX)
     });
 
     // runs the animations of the slider
