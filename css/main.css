@@ -61,24 +61,55 @@ body {
     background-color: #77ccf7;
 }
 
-#image-header {
-    background-image: url("../images/background.jpeg");
-
-    height: 500px;
-
-    box-shadow: 0px 0 30px 40px #77ccf7 inset;
+#header-text-container {
+    text-align: center;
 }
 
 #header-text {
-    text-align: center;
+    position: absolute;
 
-    font-size: 75px;
+    /* For proper centering (parent ignores this divs size) */
+    display: inline-block;
+    transform: translate(-50%);
 
-    color: white;
+    padding: 5px 30px;
 
-    /* Vertically align https://stackoverflow.com/a/20563075/1985387 */
-    display:flex;
+    font-size: 100px;
+
+    color: #333;
+
+    background-color: rgba(255, 255, 255, .5);
+}
+
+/* slider images */
+
+#slider-container {
+    position: relative;
+
+    height: 550px;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-image {
+    position: absolute;
+
     height: 100%;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+
+    left: 0;
+
+    background-repeat: no-repeat;
+    background-size: 100% contain;
+}
+
+.slider-image#before-image {
+    background-image: url("../images/before.jpg");
+
+    border-right: 10px solid black;
+}
+
+.slider-image#after-image {
+    background-image: url("../images/after.jpg");
 }
