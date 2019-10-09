@@ -107,9 +107,11 @@ body {
 }
 
 .slider-image#before-image {
-    background-image: url("../images/before.jpeg");
+    background-image: url("../images/before.jpg");
+
+    border-right: 5px solid black;
 }
 
 .slider-image#after-image {
-    background-image: url("../images/after.jpeg");
+    background-image: url("../images/after.jpg");
 }
