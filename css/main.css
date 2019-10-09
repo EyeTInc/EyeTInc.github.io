@@ -82,3 +82,34 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+/* slider images */
+
+#slider-container {
+    position: relative;
+
+    height: 500px;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-image {
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    left: 0;
+
+    background-repeat: no-repeat;
+    background-size: 100% contain;
+}
+
+.slider-image#before-image {
+    background-image: url("../images/before.jpeg");
+}
+
+.slider-image#after-image {
+    background-image: url("../images/after.jpeg");
+}
