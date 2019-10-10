@@ -11,6 +11,11 @@ p {
     margin: 0 auto;
 }
 
+.p{
+    display: block;
+    text-align: left;
+}
+
 #header {
     padding: 20px;
 
@@ -19,11 +24,15 @@ p {
     font-size: 20px;
 
     background-color: lightgray;
+
+    color: #454545;
+
+    vertical-align: middle;
     
 }
 .right {
     float: right;
-    line-height: 70px;
+    line-height: 60px;
     vertical-align: middle;
 }
 
@@ -87,19 +96,71 @@ body {
     align-items: center;
     justify-content: center;
 }
+#faq{
+    float: left;
+    width: 50%;
+    margin: 20px auto;
+    /*display: table;*/
+    text-align: left;
+}
 
 #general-header{
     text-align: left;
+    float: left;
+    width: 50%;
     font-size: 35px;
     color: #808080;
+    padding-left: 20px;
+}
+
+
+#faq_info{
+    justify-content: left;
+    text-align: left;
+    float: left;
+    padding-left: 20px;
+}
+
+#email_form{
+    padding-right: 20px;
+    float: right;
 }
 
 form{
-    display:inline-block;
     text-align: left;
     float: right;
-    padding-right: 20px;
+    width: 100%;
     font-size: 25px;
     color: #808080;
 
+}
+
+#contact-header{
+    padding-left: 0px;
+    font-size: 35px;
+}
+label{
+    font-size: 25px;
+}
+input, textarea{
+    border-radius: 5px;
+    float: left;
+    padding-right: 20px;
+    display: block;
+}
+
+
+input[type=submit]{
+    display: block;
+    background-color: #cccccc;
+    border: groove;
+    padding: 16px 32px;
+    overflow: hidden;
+    text-decoration-style: double;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #b0b0b0;
 }
