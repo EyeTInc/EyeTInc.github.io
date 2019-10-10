@@ -16,6 +16,13 @@ p {
     text-align: left;
 }
 
+a{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+    color: #454545;
+}
 #header {
     padding: 20px;
 
@@ -75,44 +82,51 @@ body {
     margin:0;
 }
 
-#header-text-container {
-    text-align: center;
+#image-header {
+    background-image: url("../images/background.jpeg");
+
+    height: 500px;
+
+    box-shadow: 0px 0 30px 40px #77ccf7 inset;
 }
 
 #header-text {
-    position: absolute;
+    text-align: center;
 
-    /* For proper centering (parent ignores this divs size) */
-    display: inline-block;
-    transform: translate(-50%);
+    font-size: 75px;
 
-    padding: 5px 30px;
+    color: white;
 
-    font-size: 100px;
-
-    color: #333;
-
-    background-color: rgba(255, 255, 255, .5);
+    /* Vertically align https://stackoverflow.com/a/20563075/1985387 */
+    display:flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
-/* slider images */
-
-#slider-container {
+#slider-container{
     position: relative;
-
     height: 550px;
-
     left: 50%;
     transform: translateX(-50%);
 }
 
-.slider-image {
-    position: absolute;
-
+.slider-image{
+    position:absolute;
     height: 100%;
-<<<<<<< HEAD
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    left:0;
+    background-repeat: no-repeat;
+    background-size: 100% contain;
+}
+
+.slider-image#before-image{
+    background-image: url("../images/before.jpg");
+    border-right: 10px solid black;
+}
+
+.slider-image#after-image{
+    background-image: url("../images/after.jpg");
 }
 #faq{
     float: left;
@@ -181,22 +195,4 @@ input[type=submit]{
 
 input[type=submit]:hover{
     background-color: #b0b0b0;
-=======
-    width: 100%;
-
-    left: 0;
-
-    background-repeat: no-repeat;
-    background-size: 100% contain;
-}
-
-.slider-image#before-image {
-    background-image: url("../images/before.jpg");
-
-    border-right: 10px solid black;
-}
-
-.slider-image#after-image {
-    background-image: url("../images/after.jpg");
->>>>>>> 52dcff3c3cda41ad87128b09d72948074f98c1fa
 }
