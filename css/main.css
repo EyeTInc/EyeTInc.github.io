@@ -25,7 +25,6 @@ a:visited{
 }
 #header {
     padding: 20px;
-
     padding-bottom: 25px;
 
     font-size: 20px;
@@ -36,6 +35,10 @@ a:visited{
 
     vertical-align: middle;
     
+}
+
+#logo{
+    padding-top: 8px;
 }
 .right {
     float: right;
@@ -174,15 +177,21 @@ form{
 label{
     font-size: 25px;
 }
+
 input, textarea{
+    font-size: 17px;
     border-radius: 5px;
     float: left;
     padding-right: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: block;
 }
 
 
 input[type=submit]{
+    height: auto;
     display: block;
     background-color: #cccccc;
     border: groove;
