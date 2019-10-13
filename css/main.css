@@ -8,7 +8,6 @@
 
 p {
     max-width: 800px;
-    margin: 0 auto;
 }
 
 .p {
@@ -108,7 +107,30 @@ body {
     justify-content: center;
 }
 
-#slider-container{
+.large-description {
+    font-size: 24pt;
+
+    text-align: center;
+}
+
+.main-button-container {
+    text-align: center;
+    display: block;
+}
+
+.main-button {
+    text-decoration: none;
+    background-color: gray;
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+
+    font-size: 20px;
+}
+
+/* slider images */
+
+#slider-container {
     position: relative;
     height: 550px;
     left: 50%;
