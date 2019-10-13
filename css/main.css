@@ -80,11 +80,6 @@ a:visited {
 
 body {
     /* Add underline animation */
-<<<<<<< HEAD
-    background-color: #77ccf7;
-	margin: 0;
-	back
-=======
     background-color: white;
     margin:0;
 }
@@ -95,7 +90,6 @@ body {
     height: 500px;
 
     box-shadow: 0px 0 30px 40px #77ccf7 inset;
->>>>>>> ead28712d25f4acc262d0ce62a5ea932c3b74c66
 }
 
 #header-text-container {
@@ -164,122 +158,6 @@ body {
     border-right: 10px solid black;
 }
 
-<<<<<<< HEAD
-h1{
-	font-size: 30px; 
-}
-
-
-header{
-	margin-bottom:300px; 
-	height:40px; 
-	background-color:lightgrey; 
-	border-bottom:5px solid black; 
-}
-
-h3{
-	height:40px; 
-	background-color:lightgrey; 
-	border-bottom:5px solid black; 
-	
-	
-}
-h4{
-	font-size: 30px; 
-}
-h5{
-	height:40px; 
-	background-color:lightgrey; 
-	border-bottom:5px solid black; 
-	
-	
-}
-h6{
-	height:40px; 
-	background-color:lightgrey; 
-	border-bottom:5px solid black; 
-	
-	
-}
-
-.glasses{
-	top:200px;
-	width:800px;
-	height:400px;
-	background-image: url("../images/glasses.jpg");
-	background-repeat:no-repeat;
-	
-}
-
-
-
-
-.slider-image#after-image {
-    background-image: url("../images/after.jpg");
-}
-
-.download{
-	top:200px;
-	margin-left:300px;
-	width:500px;
-	height:400px;
-	background-image:url("../images/download.jpg");
-	background-repeat:no-repeat;	
-	
-}
-.Portrait_placeholder1{
-	background-repeat:no-repeat;
-	background-image:url("../images/Portrait_placeholder.jpg");
-	float:left;
-	width:100px;
-	padding:200px;
-}
-.Portrait_placeholder2{
-	float:left;
-	width:100px;
-	padding:200px;
-	margin-left:300px;
-	top:-3900px;
-	background-repeat:no-repeat;
-	background-image:url("../images/Portrait_placeholder.jpg");
-	height:250px;
-}
-.Portrait_placeholder3{
-	margin-left:600px;
-	top:500px;
-	background-repeat:no-repeat;
-	background-image:url("../images/Portrait_placeholder.jpg");
-	width:200px;
-	height:200px
-}
-.Portrait_placeholder4{
-	background-repeat:no-repeat;
-	background-image:url("../images/Portrait_placeholder.jpg");
-	width:600px;
-	height:300px;
-}
-.Portrait_placeholder5{
-	background-repeat:no-repeat;
-	background-image:url("../images/Portrait_placeholder.jpg");
-	width:700px;
-	height:300px;
-}
-.uottawa{
-	top:200px;
-	margin-left:300px;
-	width:500px;
-	height:400px;
-	background-repeat:no-repeat;
-	background-image:url("../images/uottawa.jpg");
-	
-}
-
-
-
-
-
-
-=======
 .slider-image#after-image{
     background-image: url("../images/after.jpg");
 }
@@ -351,4 +229,3 @@ input[type=submit]{
 input[type=submit]:hover{
     background-color: #b0b0b0;
 }
->>>>>>> ead28712d25f4acc262d0ce62a5ea932c3b74c66

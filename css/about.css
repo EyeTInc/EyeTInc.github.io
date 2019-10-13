@@ -1,0 +1,108 @@
+h1{
+	font-size: 30px; 
+}
+
+
+header{
+	margin-bottom:300px; 
+	height:40px; 
+	background-color:lightgrey; 
+	border-bottom:5px solid black; 
+}
+
+h3{
+	height:40px; 
+	background-color:lightgrey; 
+	border-bottom:5px solid black; 
+	
+	
+}
+h4{
+	font-size: 30px; 
+}
+h5{
+	height:40px; 
+	background-color:lightgrey; 
+	border-bottom:5px solid black; 
+	
+	
+}
+h6{
+	height:40px; 
+	background-color:lightgrey; 
+	border-bottom:5px solid black; 
+	
+	
+}
+
+.glasses{
+	top:200px;
+	width:800px;
+	height:400px;
+	background-image: url("../images/glasses.jpg");
+	background-repeat:no-repeat;
+	
+}
+
+
+
+
+.slider-image#after-image {
+    background-image: url("../images/after.jpg");
+}
+
+.download{
+	top:200px;
+	margin-left:300px;
+	width:500px;
+	height:400px;
+	background-image:url("../images/download.jpg");
+	background-repeat:no-repeat;	
+	
+}
+.Portrait_placeholder1{
+	background-repeat:no-repeat;
+	background-image:url("../images/Portrait_placeholder.jpg");
+	float:left;
+	width:100px;
+	padding:200px;
+}
+.Portrait_placeholder2{
+	float:left;
+	width:100px;
+	padding:200px;
+	margin-left:300px;
+	top:-3900px;
+	background-repeat:no-repeat;
+	background-image:url("../images/Portrait_placeholder.jpg");
+	height:250px;
+}
+.Portrait_placeholder3{
+	margin-left:600px;
+	top:500px;
+	background-repeat:no-repeat;
+	background-image:url("../images/Portrait_placeholder.jpg");
+	width:200px;
+	height:200px
+}
+.Portrait_placeholder4{
+	background-repeat:no-repeat;
+	background-image:url("../images/Portrait_placeholder.jpg");
+	width:600px;
+	height:300px;
+}
+.Portrait_placeholder5{
+	background-repeat:no-repeat;
+	background-image:url("../images/Portrait_placeholder.jpg");
+	width:700px;
+	height:300px;
+}
+.uottawa{
+	top:200px;
+	margin-left:300px;
+	width:500px;
+	height:400px;
+	background-repeat:no-repeat;
+	background-image:url("../images/uottawa.jpg");
+	
+}
