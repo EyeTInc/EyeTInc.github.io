@@ -6,20 +6,33 @@
     text-align: center
 }
 
-p {
-    max-width: 800px;
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #454545;
 }
 
 #header {
-    padding: 10px;
+    padding: 20px;
 
     padding-bottom: 25px;
 
     font-size: 20px;
-}
 
+    background-color: lightgray;
+
+    color: #454545;
+
+    vertical-align: middle;
+    
+}
 .right {
     float: right;
+    line-height: 60px;
+    vertical-align: middle;
 }
 
 .links {
@@ -27,6 +40,8 @@ p {
 
     margin-right: 25px;
     cursor: pointer;
+
+    color: black;
 }
 
 .links:before {
@@ -57,32 +72,37 @@ p {
 
 body {
     /* Add underline animation */
-    background-color: #77ccf7;
+    background-color: white;
+    margin:0;
 }
 
-#header-text-container {
-    text-align: center;
+#image-header {
+    background-image: url("../images/background.jpeg");
+
+    height: 500px;
+
+    box-shadow: 0px 0 30px 40px #77ccf7 inset;
 }
 
 #header-text {
-    position: absolute;
+    text-align: center;
 
-    /* For proper centering (parent ignores this divs size) */
-    display: inline-block;
-    transform: translate(-50%);
+    font-size: 75px;
 
-    padding: 5px 30px;
+    color: white;
 
-    font-size: 100px;
-
-    color: #333;
-
-    background-color: rgba(255, 255, 255, .5);
+    /* Vertically align https://stackoverflow.com/a/20563075/1985387 */
+    display:flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .large-description {
     font-size: 24pt;
+}
 
+.description {
     text-align: center;
 }
 
@@ -105,31 +125,93 @@ body {
 
 #slider-container {
     position: relative;
-
     height: 550px;
-
     left: 50%;
     transform: translateX(-50%);
 }
 
-.slider-image {
-    position: absolute;
-
+.slider-image{
+    position:absolute;
     height: 100%;
     width: 100%;
-
-    left: 0;
-
+    left:0;
     background-repeat: no-repeat;
     background-size: 100% contain;
 }
 
-.slider-image#before-image {
+.slider-image#before-image{
     background-image: url("../images/before.jpg");
-
     border-right: 10px solid black;
 }
 
-.slider-image#after-image {
+.slider-image#after-image{
     background-image: url("../images/after.jpg");
+}
+#faq{
+    float: left;
+    width: 50%;
+    margin: 20px auto;
+    /*display: table;*/
+    text-align: left;
+}
+
+#general-header{
+    text-align: left;
+    float: left;
+    width: 50%;
+    font-size: 35px;
+    color: #808080;
+    padding-left: 20px;
+}
+
+
+#faq_info{
+    justify-content: left;
+    text-align: left;
+    float: left;
+    padding-left: 20px;
+}
+
+#email_form{
+    padding-right: 20px;
+    float: right;
+}
+
+form{
+    text-align: left;
+    float: right;
+    width: 100%;
+    font-size: 25px;
+    color: #808080;
+
+}
+
+#contact-header{
+    padding-left: 0px;
+    font-size: 35px;
+}
+label{
+    font-size: 25px;
+}
+input, textarea{
+    border-radius: 5px;
+    float: left;
+    padding-right: 20px;
+    display: block;
+}
+
+
+input[type=submit]{
+    display: block;
+    background-color: #cccccc;
+    border: groove;
+    padding: 16px 32px;
+    overflow: hidden;
+    text-decoration-style: double;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #b0b0b0;
 }
