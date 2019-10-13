@@ -3,7 +3,13 @@
 }
 
 .center {
-    text-align: center
+    text-align: center;
+}
+
+p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
