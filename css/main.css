@@ -54,6 +54,8 @@ a:visited {
     bottom: 0;
     left: 0;
 
+    top: 75%;
+
     background-color: #000;
 
     visibility: hidden;
