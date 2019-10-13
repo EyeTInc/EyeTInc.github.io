@@ -84,18 +84,24 @@ body {
     box-shadow: 0px 0 30px 40px #77ccf7 inset;
 }
 
-#header-text {
+#header-text-container {
     text-align: center;
+}
 
-    font-size: 75px;
+#header-text {
+    position: absolute;
 
-    color: white;
+    /* For proper centering (parent ignores this divs size) */
+    display: inline-block;
+    transform: translate(-50%);
 
-    /* Vertically align https://stackoverflow.com/a/20563075/1985387 */
-    display:flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+    padding: 5px 30px;
+
+    font-size: 100px;
+
+    color: #333;
+
+    background-color: rgba(255, 255, 255, .5);
 }
 
 .large-description {
