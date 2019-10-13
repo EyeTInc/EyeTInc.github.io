@@ -11,18 +11,20 @@ p {
     margin: 0 auto;
 }
 
-.p{
+.p {
     display: block;
     text-align: left;
 }
 
-a{
+a {
     text-decoration: none;
 }
-a:visited{
+
+a:visited {
     text-decoration: none;
     color: #454545;
 }
+
 #header {
     padding: 20px;
 
@@ -48,6 +50,8 @@ a:visited{
 
     margin-right: 25px;
     cursor: pointer;
+
+    color: black;
 }
 
 .links:before {
