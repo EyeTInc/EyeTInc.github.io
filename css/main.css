@@ -3,24 +3,42 @@
 }
 
 .center {
-    text-align: center
+    text-align: center;
 }
 
 p {
     max-width: 800px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #454545;
 }
 
 #header {
-    padding: 10px;
+    padding: 20px;
 
     padding-bottom: 25px;
 
     font-size: 20px;
-}
 
+    background-color: lightgray;
+
+    color: #454545;
+
+    vertical-align: middle;
+    
+}
 .right {
     float: right;
+    line-height: 60px;
+    vertical-align: middle;
 }
 
 .links {
@@ -28,6 +46,8 @@ p {
 
     margin-right: 25px;
     cursor: pointer;
+
+    color: black;
 }
 
 .links:before {
@@ -39,6 +59,8 @@ p {
     height: 2px;
     bottom: 0;
     left: 0;
+
+    top: 75%;
 
     background-color: #000;
 
@@ -58,9 +80,22 @@ p {
 
 body {
     /* Add underline animation */
+<<<<<<< HEAD
     background-color: #77ccf7;
 	margin: 0;
 	back
+=======
+    background-color: white;
+    margin:0;
+}
+
+#image-header {
+    background-image: url("../images/background.jpeg");
+
+    height: 500px;
+
+    box-shadow: 0px 0 30px 40px #77ccf7 inset;
+>>>>>>> ead28712d25f4acc262d0ce62a5ea932c3b74c66
 }
 
 #header-text-container {
@@ -83,35 +118,53 @@ body {
     background-color: rgba(255, 255, 255, .5);
 }
 
+.large-description {
+    font-size: 24pt;
+}
+
+.description {
+    text-align: center;
+}
+
+.main-button-container {
+    text-align: center;
+    display: block;
+}
+
+.main-button {
+    text-decoration: none;
+    background-color: gray;
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+
+    font-size: 20px;
+}
+
 /* slider images */
 
 #slider-container {
     position: relative;
-
     height: 550px;
-
     left: 50%;
     transform: translateX(-50%);
 }
 
-.slider-image {
-    position: absolute;
-
+.slider-image{
+    position:absolute;
     height: 100%;
     width: 100%;
-
-    left: 0;
-
+    left:0;
     background-repeat: no-repeat;
     background-size: 100% contain;
 }
 
-.slider-image#before-image {
+.slider-image#before-image{
     background-image: url("../images/before.jpg");
-
     border-right: 10px solid black;
 }
 
+<<<<<<< HEAD
 h1{
 	font-size: 30px; 
 }
@@ -226,3 +279,76 @@ h6{
 
 
 
+=======
+.slider-image#after-image{
+    background-image: url("../images/after.jpg");
+}
+#faq{
+    float: left;
+    width: 50%;
+    margin: 20px auto;
+    /*display: table;*/
+    text-align: left;
+}
+
+#general-header{
+    text-align: left;
+    float: left;
+    width: 50%;
+    font-size: 35px;
+    color: #808080;
+    padding-left: 20px;
+}
+
+
+#faq_info{
+    justify-content: left;
+    text-align: left;
+    float: left;
+    padding-left: 20px;
+}
+
+#email_form{
+    padding-right: 20px;
+    float: right;
+}
+
+form{
+    text-align: left;
+    float: right;
+    width: 100%;
+    font-size: 25px;
+    color: #808080;
+
+}
+
+#contact-header{
+    padding-left: 0px;
+    font-size: 35px;
+}
+label{
+    font-size: 25px;
+}
+input, textarea{
+    border-radius: 5px;
+    float: left;
+    padding-right: 20px;
+    display: block;
+}
+
+
+input[type=submit]{
+    display: block;
+    background-color: #cccccc;
+    border: groove;
+    padding: 16px 32px;
+    overflow: hidden;
+    text-decoration-style: double;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #b0b0b0;
+}
+>>>>>>> ead28712d25f4acc262d0ce62a5ea932c3b74c66
