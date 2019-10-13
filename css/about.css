@@ -3,23 +3,16 @@ h1{
 }
 
 
-header{
-	margin-bottom:300px; 
+h3{
 	height:40px; 
 	background-color:lightgrey; 
 	border-bottom:5px solid black; 
 }
 
-h3{
-	height:40px; 
-	background-color:lightgrey; 
-	border-bottom:5px solid black; 
-	
-	
-}
 h4{
 	font-size: 30px; 
 }
+
 h5{
 	height:40px; 
 	background-color:lightgrey; 
@@ -41,11 +34,7 @@ h6{
 	height:400px;
 	background-image: url("../images/glasses.jpg");
 	background-repeat:no-repeat;
-	
 }
-
-
-
 
 .slider-image#after-image {
     background-image: url("../images/after.jpg");
