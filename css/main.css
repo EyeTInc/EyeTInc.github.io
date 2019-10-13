@@ -6,15 +6,6 @@
     text-align: center
 }
 
-p {
-    max-width: 800px;
-}
-
-.p {
-    display: block;
-    text-align: left;
-}
-
 a {
     text-decoration: none;
 }
@@ -109,7 +100,9 @@ body {
 
 .large-description {
     font-size: 24pt;
+}
 
+.description {
     text-align: center;
 }
 
