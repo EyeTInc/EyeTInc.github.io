@@ -16,11 +16,6 @@ a {
     text-decoration: none;
 }
 
-a:visited {
-    text-decoration: none;
-    color: #454545;
-}
-
 #header {
     padding: 20px;
 
