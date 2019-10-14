@@ -134,6 +134,166 @@ body {
     font-size: 20px;
 }
 
+/* FAQ page css*/
+
+#faq-link{
+    color: #808080;
+    text-decoration: underline;
+}
+#faq-subtitle{
+    color: #808080;
+    font-size: 30px;
+    float: left;
+    padding-left: 20px;
+}
+
+.accordion{
+    background-color: rgba(122, 122, 122, 0.384);
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 90%;
+    margin-left: 20px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 17px;
+}
+
+.active, .accordion:hover{
+    background-color: gray;
+    color: white;
+}
+.accordion:after{
+    content: "+"; /*plus sign*/
+    font-size: 17px;
+    color: black;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after{
+    content: "-"; /*minus sign*/
+    color: white;
+}
+.panel{
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    display: block;
+}
+.panel.show{
+    opacity: 1;
+    max-height: 100%;
+}
+
+.panel p{
+    max-width: 100%;
+    font-size: 17px;
+    margin: 0 auto;
+}
+
+#faq{
+    float: left;
+    width: 50%;
+    margin: 20px auto;
+    /*display: table;*/
+    text-align: left;
+}
+
+#general-header{
+    text-align: left;
+    float: left;
+    width: 50%;
+    font-size: 35px;
+    color: #808080;
+    padding-left: 20px;
+}
+
+
+#faq_info{
+    justify-content: left;
+    text-align: left;
+    float: left;
+    padding-left: 20px;
+}
+
+#email_form{
+    padding-right: 20px;
+    float: right;
+}
+
+form{
+    text-align: left;
+    float: right;
+    width: 100%;
+    font-size: 25px;
+    color: #808080;
+}
+
+#contact-header{
+    padding-left: 0px;
+    font-size: 35px;
+    margin-left: 15px;
+}
+
+#contact-info{
+    float: left;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 10px;   
+    margin-right: 10px;
+    display: block;
+}
+
+#contact-info b{
+    font-size: 25px;
+}
+#contact-info p{
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 20px;
+    max-width: 100%;
+}
+
+label{
+    font-size: 25px;
+    margin-left: 25%;
+    padding-left: 10px;
+}
+
+input, textarea{
+    font-size: 17px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin-left: 25%;
+}
+
+input[type=submit]{
+    height: auto;
+    display: block;
+    background-color: #cccccc;
+    border: groove;
+    padding: 16px 32px;
+    overflow: hidden;
+    text-decoration-style: double;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #b0b0b0;
+}
+
 /* About page */
 
 .main-container {
@@ -145,6 +305,19 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+
+.accordion{
+    background-color: rgba(122, 122, 122, 0.384);
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 17px;
 }
 
 .middle-photos {
@@ -197,7 +370,7 @@ body {
     transform: translateX(-50%);
 }
 
-.slider-image{
+.slider-image {
     position:absolute;
     height: 100%;
     width: 100%;
@@ -206,79 +379,11 @@ body {
     background-size: 100% contain;
 }
 
-.slider-image#before-image{
+.slider-image#before-image {
     background-image: url("../images/before.jpg");
     border-right: 10px solid black;
 }
 
-.slider-image#after-image{
+.slider-image#after-image {
     background-image: url("../images/after.jpg");
-}
-#faq{
-    float: left;
-    width: 50%;
-    margin: 20px auto;
-    /*display: table;*/
-    text-align: left;
-}
-
-#general-header{
-    text-align: left;
-    float: left;
-    width: 50%;
-    font-size: 35px;
-    color: #808080;
-    padding-left: 20px;
-}
-
-
-#faq_info{
-    justify-content: left;
-    text-align: left;
-    float: left;
-    padding-left: 20px;
-}
-
-#email_form{
-    padding-right: 20px;
-    float: right;
-}
-
-form{
-    text-align: left;
-    float: right;
-    width: 100%;
-    font-size: 25px;
-    color: #808080;
-
-}
-
-#contact-header{
-    padding-left: 0px;
-    font-size: 35px;
-}
-label{
-    font-size: 25px;
-}
-input, textarea{
-    border-radius: 5px;
-    float: left;
-    padding-right: 20px;
-    display: block;
-}
-
-
-input[type=submit]{
-    display: block;
-    background-color: #cccccc;
-    border: groove;
-    padding: 16px 32px;
-    overflow: hidden;
-    text-decoration-style: double;
-    margin-top: 7px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover{
-    background-color: #b0b0b0;
 }
