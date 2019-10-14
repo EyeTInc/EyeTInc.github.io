@@ -347,7 +347,7 @@ input[type=submit]:hover{
 	font-size: 17pt;
 }
 
-.p {
+.panel p {
     display: block;
     text-align: left;
     max-width: 800px;
