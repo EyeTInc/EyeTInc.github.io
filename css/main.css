@@ -16,11 +16,6 @@ a {
     text-decoration: none;
 }
 
-a:visited {
-    text-decoration: none;
-    color: #454545;
-}
-
 #header {
     padding: 20px;
 
@@ -92,11 +87,11 @@ body {
     box-shadow: 0px 0 30px 40px #77ccf7 inset;
 }
 
-#header-text-container {
+.header-text-container {
     text-align: center;
 }
 
-#header-text {
+.header-text {
     position: absolute;
 
     /* For proper centering (parent ignores this divs size) */
@@ -110,6 +105,10 @@ body {
     color: #333;
 
     background-color: rgba(255, 255, 255, .5);
+}
+
+.smaller-header {
+    font-size: 60pt;
 }
 
 .large-description {
@@ -133,6 +132,60 @@ body {
     border-radius: 5px;
 
     font-size: 20px;
+}
+
+/* About page */
+
+.main-container {
+	height: 400px;
+}
+
+.main-container.motto {
+	background-image: url("../images/after.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.middle-photos {
+	text-align: justify;
+	text-align-last: justify;
+
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.portrait {
+	vertical-align: top;
+	display: inline-block;
+	
+	text-align: center;
+	text-align-last: center;
+	width: 150px;
+}
+
+.caption {
+	display: block;
+
+	margin-top: 5px;
+}
+
+.main-container.description {
+	background-color: rgb(170, 170, 170);
+}
+
+.main-container.final {
+	background-color: rgb(170, 170, 170);
+}
+
+.description-container {
+	height: 100%;
+
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	
+	font-size: 17pt;
 }
 
 /* slider images */
