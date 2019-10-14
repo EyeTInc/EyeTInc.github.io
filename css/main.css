@@ -3,40 +3,31 @@
 }
 
 .center {
-    text-align: center
+    text-align: center;
 }
 
 p {
-    max-width: 800px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.p{
-    display: block;
-    text-align: left;
+a {
+    text-decoration: none;
 }
 
-a{
-    text-decoration: none;
-}
-a:visited{
-    text-decoration: none;
-    color: #454545;
-}
 #header {
     padding: 20px;
+
     padding-bottom: 25px;
 
     font-size: 20px;
-    
+
     background-color: lightgray;
+
     color: #454545;
+
     vertical-align: middle;
     
-}
-
-#logo{
-    padding-top: 8px;
 }
 .right {
     float: right;
@@ -49,6 +40,8 @@ a:visited{
 
     margin-right: 25px;
     cursor: pointer;
+
+    color: black;
 }
 
 .links:before {
@@ -60,6 +53,8 @@ a:visited{
     height: 2px;
     bottom: 0;
     left: 0;
+
+    top: 75%;
 
     background-color: #000;
 
@@ -91,44 +86,118 @@ body {
     box-shadow: 0px 0 30px 40px #77ccf7 inset;
 }
 
-#header-text {
+.header-text-container {
     text-align: center;
+}
 
-    font-size: 75px;
+.header-text {
+    position: absolute;
 
+    /* For proper centering (parent ignores this divs size) */
+    display: inline-block;
+    transform: translate(-50%);
+
+    padding: 5px 30px;
+
+    font-size: 100px;
+
+    color: #333;
+
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.smaller-header {
+    font-size: 60pt;
+}
+
+.large-description {
+    font-size: 24pt;
+}
+
+.description {
+    text-align: center;
+}
+
+.main-button-container {
+    text-align: center;
+    display: block;
+}
+
+.main-button {
+    text-decoration: none;
+    background-color: gray;
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+
+    font-size: 20px;
+}
+
+/* FAQ page css*/
+
+#faq-link{
+    color: #808080;
+    text-decoration: underline;
+}
+#faq-subtitle{
+    color: #808080;
+    font-size: 30px;
+    float: left;
+    padding-left: 20px;
+}
+
+.accordion{
+    background-color: rgba(122, 122, 122, 0.384);
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 90%;
+    margin-left: 20px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 17px;
+}
+
+.active, .accordion:hover{
+    background-color: gray;
     color: white;
-
-    /* Vertically align https://stackoverflow.com/a/20563075/1985387 */
-    display:flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+}
+.accordion:after{
+    content: "+"; /*plus sign*/
+    font-size: 17px;
+    color: black;
+    float: right;
+    margin-left: 5px;
 }
 
-#slider-container{
-    position: relative;
-    height: 550px;
-    left: 50%;
-    transform: translateX(-50%);
+.active:after{
+    content: "-"; /*minus sign*/
+    color: white;
+}
+.panel{
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    display: block;
+}
+.panel.show{
+    opacity: 1;
+    max-height: 100%;
 }
 
-.slider-image{
-    position:absolute;
-    height: 100%;
-    width: 100%;
-    left:0;
-    background-repeat: no-repeat;
-    background-size: 100% contain;
+.panel p{
+    max-width: 100%;
+    font-size: 17px;
+    margin: 0 auto;
 }
 
-.slider-image#before-image{
-    background-image: url("../images/before.jpg");
-    border-right: 10px solid black;
-}
-
-.slider-image#after-image{
-    background-image: url("../images/after.jpg");
-}
 #faq{
     float: left;
     width: 50%;
@@ -224,18 +293,20 @@ input[type=submit]:hover{
     background-color: #b0b0b0;
 }
 
-/*faq.html css*/
-#faq-link{
-    color: #808080;
-    text-decoration: underline;
-}
-#faq-subtitle{
-    color: #808080;
-    font-size: 30px;
-    float: left;
-    padding-left: 20px;
+/* About page */
+
+.main-container {
+	height: 400px;
 }
 
+.main-container.motto {
+	background-image: url("../images/after.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+<<<<<<< HEAD
 .accordion{
     background-color: rgba(122, 122, 122, 0.384);
     color: black;
@@ -247,41 +318,72 @@ input[type=submit]:hover{
     outline: none;
     transition: 0.4s;
     font-size: 17px;
+=======
+.middle-photos {
+	text-align: justify;
+	text-align-last: justify;
+
+	padding-left: 60px;
+	padding-right: 60px;
+>>>>>>> 102488d1d74205e2d99c72dd77732fd640edc348
 }
 
-.active, .accordion:hover{
-    background-color: gray;
-    color: white;
-}
-.accordion:after{
-    content: "+"; /*plus sign*/
-    font-size: 17px;
-    color: black;
-    float: right;
-    margin-left: 5px;
+.portrait {
+	vertical-align: top;
+	display: inline-block;
+	
+	text-align: center;
+	text-align-last: center;
+	width: 150px;
 }
 
-.active:after{
-    content: "-"; /*minus sign*/
-    color: white;
-}
-.panel{
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0px;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    float: left;
-    display: block;
-}
-.panel.show{
-    opacity: 1;
-    max-height: 100%;
+.caption {
+	display: block;
+
+	margin-top: 5px;
 }
 
-.panel p{
-    max-width: 100%;
-    font-size: 17px;
+.main-container.description {
+	background-color: rgb(170, 170, 170);
+}
+
+.main-container.final {
+	background-color: rgb(170, 170, 170);
+}
+
+.description-container {
+	height: 100%;
+
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	
+	font-size: 17pt;
+}
+
+/* slider images */
+
+#slider-container {
+    position: relative;
+    height: 550px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-image {
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    left:0;
+    background-repeat: no-repeat;
+    background-size: 100% contain;
+}
+
+.slider-image#before-image {
+    background-image: url("../images/before.jpg");
+    border-right: 10px solid black;
+}
+
+.slider-image#after-image {
+    background-image: url("../images/after.jpg");
 }
