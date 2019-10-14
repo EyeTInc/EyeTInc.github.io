@@ -6,25 +6,31 @@
     text-align: center
 }
 
-a {
-    text-decoration: none;
+p {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-a:visited {
+.p{
+    display: block;
+    text-align: left;
+}
+
+a{
+    text-decoration: none;
+}
+a:visited{
     text-decoration: none;
     color: #454545;
 }
-
 #header {
     padding: 20px;
     padding-bottom: 25px;
 
     font-size: 20px;
-
+    
     background-color: lightgray;
-
     color: #454545;
-
     vertical-align: middle;
     
 }
@@ -43,8 +49,6 @@ a:visited {
 
     margin-right: 25px;
     cursor: pointer;
-
-    color: black;
 }
 
 .links:before {
@@ -56,8 +60,6 @@ a:visited {
     height: 2px;
     bottom: 0;
     left: 0;
-
-    top: 75%;
 
     background-color: #000;
 
@@ -89,52 +91,21 @@ body {
     box-shadow: 0px 0 30px 40px #77ccf7 inset;
 }
 
-#header-text-container {
-    text-align: center;
-}
-
 #header-text {
-    position: absolute;
-
-    /* For proper centering (parent ignores this divs size) */
-    display: inline-block;
-    transform: translate(-50%);
-
-    padding: 5px 30px;
-
-    font-size: 100px;
-
-    color: #333;
-
-    background-color: rgba(255, 255, 255, .5);
-}
-
-.large-description {
-    font-size: 24pt;
-}
-
-.description {
     text-align: center;
+
+    font-size: 75px;
+
+    color: white;
+
+    /* Vertically align https://stackoverflow.com/a/20563075/1985387 */
+    display:flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
-.main-button-container {
-    text-align: center;
-    display: block;
-}
-
-.main-button {
-    text-decoration: none;
-    background-color: gray;
-    padding: 10px;
-    color: black;
-    border-radius: 5px;
-
-    font-size: 20px;
-}
-
-/* slider images */
-
-#slider-container {
+#slider-container{
     position: relative;
     height: 550px;
     left: 50%;
@@ -194,28 +165,48 @@ form{
     width: 100%;
     font-size: 25px;
     color: #808080;
-
 }
 
 #contact-header{
     padding-left: 0px;
     font-size: 35px;
+    margin-left: 15px;
 }
+
+#contact-info{
+    float: left;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 10px;   
+    margin-right: 10px;
+    display: block;
+}
+
+#contact-info b{
+    font-size: 25px;
+}
+#contact-info p{
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 20px;
+    max-width: 100%;
+}
+
 label{
     font-size: 25px;
+    margin-left: 25%;
+    padding-left: 10px;
 }
 
 input, textarea{
     font-size: 17px;
     border-radius: 5px;
-    float: left;
-    padding-right: 20px;
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     display: block;
+    margin-left: 25%;
 }
-
 
 input[type=submit]{
     height: auto;
@@ -225,10 +216,64 @@ input[type=submit]{
     padding: 16px 32px;
     overflow: hidden;
     text-decoration-style: double;
-    margin-top: 7px;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 
 input[type=submit]:hover{
     background-color: #b0b0b0;
+}
+
+/*faq.html css*/
+#faq-link{
+    color: #808080;
+    text-decoration: underline;
+}
+#faq-subtitle{
+    color: #808080;
+    font-size: 30px;
+    float: left;
+    padding-left: 20px;
+}
+
+.accordion{
+    background-color: rgba(122, 122, 122, 0.384);
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+
+.active, .accordion:hover{
+    background-color: gray;
+    color: white;
+}
+.accordion:after{
+    content: "+"; /*plus sign*/
+    font-size: 13px;
+    color: black;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after{
+    content: "-"; /*minus sign*/
+    color: white;
+}
+.panel{
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    margin-bottom: 10px;
+}
+.panel.show{
+    opacity: 1;
+    max-height: 100%;
 }
