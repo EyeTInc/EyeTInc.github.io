@@ -307,7 +307,6 @@ input[type=submit]:hover{
 	background-position: center;
 }
 
-<<<<<<< HEAD
 .accordion{
     background-color: rgba(122, 122, 122, 0.384);
     color: black;
@@ -319,14 +318,14 @@ input[type=submit]:hover{
     outline: none;
     transition: 0.4s;
     font-size: 17px;
-=======
+}
+
 .middle-photos {
 	text-align: justify;
 	text-align-last: justify;
 
 	padding-left: 60px;
 	padding-right: 60px;
->>>>>>> 102488d1d74205e2d99c72dd77732fd640edc348
 }
 
 .portrait {
