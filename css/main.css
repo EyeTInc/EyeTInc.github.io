@@ -241,13 +241,14 @@ input[type=submit]:hover{
     color: black;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: 90%;
+    margin-left: 20px;
     text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
+    font-size: 17px;
 }
-
 
 .active, .accordion:hover{
     background-color: gray;
@@ -255,7 +256,7 @@ input[type=submit]:hover{
 }
 .accordion:after{
     content: "+"; /*plus sign*/
-    font-size: 13px;
+    font-size: 17px;
     color: black;
     float: right;
     margin-left: 5px;
@@ -270,10 +271,18 @@ input[type=submit]:hover{
     background-color: white;
     max-height: 0px;
     overflow: hidden;
-    transition: max-height 0.4s ease-out;
+    transition: max-height 0.2s ease-out;
+    margin-top: 10px;
     margin-bottom: 10px;
+    float: left;
+    display: block;
 }
 .panel.show{
     opacity: 1;
     max-height: 100%;
+}
+
+.panel p{
+    max-width: 100%;
+    font-size: 17px;
 }
