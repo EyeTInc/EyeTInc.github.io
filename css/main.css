@@ -312,7 +312,6 @@ input[type=submit]:hover{
     color: black;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
     text-align: left;
     border: none;
     outline: none;
