@@ -312,7 +312,7 @@ input[type=submit]:hover{
 	background-size: cover;
     background-position: center;
 
-    border: 2px solid black;
+    border: 2px solid white;
 
     cursor: pointer;
 
@@ -327,7 +327,7 @@ input[type=submit]:hover{
 }
 
 .product-preview-button.clicked {
-    border: 3px solid white;
+    border: 3px solid black;
 }
 
 #product-1 {
