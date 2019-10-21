@@ -348,6 +348,29 @@ input[type=submit]:hover{
     right: 40px;
 }
 
+.product-description {
+    max-width: 380px;
+    text-align: left;
+
+    margin-left: 20px;
+
+    font-size: 18px;
+}
+
+.product-description.large {
+    font-size: 40px;
+}
+
+.product-image .left {
+    text-align: left;
+
+    margin-left: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
 /* About page */
 
 .main-container {

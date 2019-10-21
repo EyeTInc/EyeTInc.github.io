@@ -22,6 +22,17 @@ function openProduct(button) {
             buttons[i].classList.remove("clicked");
         }
     }
+
+    // Deal with descriptions
+    document.getElementById(button.id + "-description").classList.remove("hidden");
+
+    for (let i = 0; i < buttons.length; i++) {
+        let description = document.getElementById(buttons[i].id + "-description");
+
+        if (buttons[i] !== button && !description.classList.contains("hidden")) {
+            description.classList.add("hidden");
+        }
+    }
 }
 
 //run init on load
