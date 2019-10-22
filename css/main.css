@@ -539,7 +539,10 @@ input[type=submit]:hover{
 }
 
 .ch-img-5 { 
-	background-image: url(../images/Supported.jpg);
+    background-image: url(../images/Supported.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
