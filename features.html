@@ -1,96 +1,102 @@
 <!doctype html>
 <html lang="en">
-    
+
 
 <head>
-        <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script>
+        //https://stackoverflow.com/a/54078968/1985387
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.classList.remove("preload");
+        }, false);
+    </script>
 </head>
 
-        
+
 <header id="header">
-            <a href="./index.html"><img id="logo" src="images/logo.png" alt="EyeT" width=60px height=60px></a>
-            
-            <a href="contact.html" class="right links">
-                Contact
-            </a>
-            <a href="faq.html" class="right links">
-                FAQ
-            </a>
-            <a href ="products.html" class="right links">
-                Products
-            </a>
-            <a href ="features.html" class="right links">
-                Features
-            </a>
-            <a href ="about.html" class="right links">
-                About
-            </a>
+    <a href="./index.html"><img id="logo" src="images/logo.png" alt="EyeT" width=60px height=60px></a>
+    
+    <a href="contact.html" class="right links">
+        Contact
+    </a>
+    <a href="faq.html" class="right links">
+        FAQ
+    </a>
+    <a href ="products.html" class="right links">
+        Products
+    </a>
+    <a href ="features.html" class="right links">
+        Features
+    </a>
+    <a href ="about.html" class="right links">
+        About
+    </a>
 </header>
-	
-<body>
-        <div class="container">
-		
-			
-			
-			<section class="main">
-			
-				<ul class="ch-grid">
-					<li>
-						<div class="ch-item ch-img-1">
-							<div class="ch-info">
-								<h3>Easily accessible</h3>	
-                                                                <p>You can choose to use the touchpad, or you can motion a gesture using your head or arms!</p>
-                                                                <a href="http://lol.com">Learn more!</a>							
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="ch-item ch-img-2">
-							<div class="ch-info">
-								<h3>Understanding</h3>
-                                                                <p>Can enable consistent scanning or gesture your ProductName to read what you are currently looking at. It will then attempt to assist you using state of the art AI.</p>								
-							        <a href="http://lol.com">Learn more!</a>
-                                                        </div>
-						</div>
-					</li>
-					<li>
-						<div class="ch-item ch-img-3">
-							<div class="ch-info">
-								<h3>Widgets</h3>	
-                                                                <p>Wide variety of widgets, ranging from fun games to incredibly efficient agendas.</p>	
-                                                                <a href="http://lol.com">Learn more!</a>						
-							</div>
-						</div>
-					</li>
-                                         <li>
-						<div class="ch-item ch-img-4">
-							<div class="ch-info">
-								<h3>Communication</h3>	
-                                                                <p>Easily communicate with anyone using your ProductName</p>
-                                                                <a href="http://lol.com">Learn more!</a>							
-							</div>
-						</div>
-					</li>
-                                         <li>
-						<div class="ch-item ch-img-5">
-							<div class="ch-info">
-								<h3>Supported apps</h3>	
-                                                                <p>EyeT has worked with numerous developers to bring your favourite apps to our platform!</p>
-                                                                <a href="http://lol.com">Learn more!</a>							
-							</div>
-						</div>
-					</li>
-				</ul>
-				
-			</section>
-			
-        </div>
 
-        <span class="main-button-container">
-            <a class="main-button" href="./products.html">Check out our selection of products</a>
-        </span>
-
-        <br/>
-    </body>
+<body class="preload">
+    <div class="container">
+        
+        <section class="main">
+            
+            <ul class="ch-grid">
+                <li>
+                    <div class="ch-item ch-img-1">
+                        <div class="ch-info">
+                            <h3>Easily accessible</h3>	
+                            <p>You can choose to use the touchpad, or you can motion a gesture using your head or arms!</p>
+                            <a href="#">Learn more!</a>							
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ch-item ch-img-2">
+                        <div class="ch-info">
+                            <h3>Understanding</h3>
+                            <p>Can enable consistent scanning or gesture your EyeT to read what you are currently looking at. It will then attempt to assist you using state of the art AI.</p>								
+                            <a href="#">Learn more!</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ch-item ch-img-3">
+                        <div class="ch-info">
+                            <h3>Widgets</h3>	
+                            <p>Wide variety of widgets, ranging from fun games to incredibly efficient agendas.</p>	
+                            <a href="#">Learn more!</a>						
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ch-item ch-img-4">
+                        <div class="ch-info">
+                            <h3>Communication</h3>	
+                            <p>Easily communicate with anyone using your EyeT</p>
+                            <a href="#">Learn more!</a>							
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ch-item ch-img-5">
+                        <div class="ch-info">
+                            <h3>Supported apps</h3>	
+                            <p>EyeT has worked with numerous developers to bring your favourite apps to our platform!</p>
+                            <a href="#">Learn more!</a>							
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            
+        </section>
+        
+    </div>
+    
+    <span class="main-button-container">
+        <a class="main-button" href="./products.html">Check out our selection of products</a>
+    </span>
+    
+    <br/>
+</body>
 
 </html>
