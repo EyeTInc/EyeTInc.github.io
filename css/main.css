@@ -187,10 +187,13 @@ body {
     max-height: 0px;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     float: left;
     display: block;
+    width: 90%;
 }
 .panel.show{
     opacity: 1;
@@ -245,6 +248,7 @@ form{
     padding-left: 0px;
     font-size: 35px;
     margin-left: 15px;
+    max-width: 100%;
 }
 
 #contact-info{
