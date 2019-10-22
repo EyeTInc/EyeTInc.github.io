@@ -1,0 +1,51 @@
+EyeT Website Style Guidelines
+.............................
+
+
+Overall Look and Feel:
+
+The overall look and feel should be sleek and modern. The user should feel as if they're buying a high-class, high-tech
+product. Additionally, we will use background images that reflect our product to catch the eye of the user.
+
+.............................
+
+Colours:
+
+To keep with the modern feel, we chose to make our website mostly monotone grays, with the occasional accent colour. 
+Here is our colour scheme:
+
+- #FFFFFF (White)			<-- This is our background colour if there is no background image
+- #D3D3D3 (Light Gray)			<-- This is our header colour
+- #9E9E9E (Spanish Gray)		<-- This is our logo colour, as well as buttons and other interactive features
+- #000000 (Black)				<-- This is our text/headings colour
+- #333333 (Darker Gray)		<-- This is the color of the EyeT text on the homepage
+
+.............................
+
+Iconography:
+
+We will use icons that are simplistic and minimal. No 3D or bevelled icons, only flat, crisp, 2D icons. Icons will contrast with
+whatever is behind them. (i.e. white on black background, dark on white background).
+
+.............................
+
+Typography:
+
+To maintain the modern feel, we will use the Google Font Raleway.
+
+.............................
+
+Links:
+
+Links will be stylised as buttons or underlined.
+
+.............................
+
+Buttons:
+
+Buttons will be rounded rectangles with shadowing to make them stand out. They will follow the above colour scheme.
+
+.............................
+
+
+
