@@ -408,6 +408,9 @@ input[type=submit]:hover{
 	padding-left: 60px;
     padding-right: 60px;
 }
+.about-title {
+    text-align: center;
+}
 
 #sponsorLogos {
     transform: translateY(50%);
@@ -421,6 +424,14 @@ input[type=submit]:hover{
 	text-align-last: center;
 	width: 150px;
 }
+
+.portrait.person {
+    width: 150px;
+    width: 150px;
+    
+    border-radius: 50%;
+}
+
 
 .portrait.logos {
     width: auto;
