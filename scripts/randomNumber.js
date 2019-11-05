@@ -45,7 +45,15 @@ function startFireworks() {
     for (let i = 0; i < objects.length; i++) {
         let currentObject = objects[i];
 
-        setTimeout(() => currentObject.classList.add("fireworks"), i * 2000);
+        setTimeout(() => currentObject.classList.add("fireworks"), getTimeout(i));
+    }
+}
+
+function getTimeout(i) {
+    if (i == 2) {
+        return 3500;
+    } else {
+        return i * 2000;
     }
 }
 
