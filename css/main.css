@@ -387,7 +387,7 @@ input[type=submit]:hover{
 }
 
 .main-container.motto {
-	background-image: url("../images/after.jpg");
+	background-image: url("../images/about-image.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
