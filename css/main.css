@@ -412,6 +412,7 @@ input[type=submit]:hover{
 	padding-left: 60px;
     padding-right: 60px;
 }
+
 .about-title {
     text-align: center;
 }
@@ -690,4 +691,10 @@ input[type=submit]:hover{
 @keyframes givaway-growth {
     from {font-size: 75px;}
     to {font-size: 85px;}
+}
+
+.fireworks-starter {
+    position: absolute;
+    
+    overflow: hidden;
 }
