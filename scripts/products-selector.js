@@ -12,8 +12,10 @@ function init() {
 
 function openProduct(button) {
     let background = document.getElementById("main-product-image");
+    let overlay = document.getElementById("overlay-product-image");
 
     background.style.backgroundImage = "url('./images/" + button.id + ".jpg')";
+    overlay.style.backgroundImage = "url('./images/" + button.id + "-o.png')";
 
     button.classList.add("clicked");
 

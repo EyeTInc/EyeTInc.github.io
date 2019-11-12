@@ -313,6 +313,20 @@ input[type=submit]:hover{
     height: calc(100vh - 110px);
 }
 
+#overlay-product-image {
+    position: absolute;
+    width: 100%;
+
+    background-image: url("../images/product-1-o.png");
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+
+    /* filter:hue-rotate(90deg); */
+
+    height: calc(100vh - 110px);
+}
+
 .product-preview-button {
     position: absolute;
     bottom: 50px;
