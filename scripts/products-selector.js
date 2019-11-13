@@ -4,6 +4,9 @@ var mouseY = -1;
 
 var overlay;
 
+//used to calculate the delta time for animation smoothness
+var lastTime = -1;
+
 function init() {
     // Add listeners
     buttons = document.querySelectorAll(".product-preview-button");
@@ -16,12 +19,8 @@ function init() {
     let colorSelector = document.getElementById("product-color-selector");
 
     //update mouse position
-    document.body.addEventListener("mousemove", function(ev) {
-        //ev.buttons == 1
-        if (ev.buttons == 1) {
-            mouseY = ev.clientY;
-        }
-    });
+    // document.getElementById("main-product-image").addEventListener("mousedown", mousePositionUpdate);
+    document.getElementById("product-color-selection-area").addEventListener("mousemove", mousePositionUpdate);
 
     overlay = document.getElementById("overlay-product-image");
 
@@ -56,9 +55,6 @@ function openProduct(button) {
     }
 }
 
-//used to calculate the delta time for animation smoothness
-var lastTime = -1;
-
 function updateColorSlider(colorSelector) {
     if (mouseY == -1) return;
 
@@ -92,13 +88,27 @@ function updateColorSlider(colorSelector) {
 
     let distanceToTarget = (localY - parseFloat(previousWidth));
 
-    let newWidth = parseFloat(previousWidth) + distanceToTarget * lerpFactor;
+    let newHeight = parseFloat(previousWidth) + distanceToTarget * lerpFactor;
 
-    borderObject.style.marginTop = newWidth + "px";
+    if (newHeight < 11) {
+        newHeight = 11;
+    }
+    if (newHeight > 332) {
+        newHeight = 332;
+    }
 
-    overlay.style.filter = "hue-rotate(" + (newWidth / colorSelector.clientHeight * 360) + "deg)"
+    borderObject.style.marginTop = newHeight + "px";
+
+    overlay.style.filter = "hue-rotate(" + (newHeight / colorSelector.clientHeight * 360) + "deg)"
 
     lastTime = Date.now();
+}
+
+function mousePositionUpdate(ev) {
+    //ev.buttons == 1
+    if (ev.buttons == 1) {
+        mouseY = ev.clientY;
+    }
 }
 
 //run init on load

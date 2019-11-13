@@ -341,6 +341,13 @@ input[type=submit]:hover{
     border-radius: 50px;
 }
 
+#product-color-selection-area {
+    position: absolute;
+
+    width: 25px;
+    height: 60%;
+}
+
 #color-selector-border {
     position: absolute;
     width: 25px;
