@@ -19,8 +19,9 @@ function init() {
     let colorSelector = document.getElementById("product-color-selector");
 
     //update mouse position
-    // document.getElementById("main-product-image").addEventListener("mousedown", mousePositionUpdate);
-    document.getElementById("product-color-selection-area").addEventListener("mousemove", mousePositionUpdate);
+    let selectionArea = document.getElementById("product-color-selection-area");
+    selectionArea.addEventListener("mousedown", mousePositionUpdate);
+    selectionArea.addEventListener("mousemove", mousePositionUpdate);
 
     overlay = document.getElementById("overlay-product-image");
 
@@ -78,28 +79,28 @@ function updateColorSlider(colorSelector) {
 
     //this is in the form of a percentage in a string
     let previousWidthFormatted = borderObject.style.marginTop;
-    let previousWidth = previousWidthFormatted.slice(0, previousWidthFormatted.length - 2)
-    if (isNaN(parseFloat(previousWidth))) {
-        previousWidth = 0;
+    let previousMargin = previousWidthFormatted.slice(0, previousWidthFormatted.length - 2)
+    if (isNaN(parseFloat(previousMargin))) {
+        previousMargin = 0;
     }
 
     //interpolation is used to make it look smoother
     let lerpFactor = 10 * deltaTime;
 
-    let distanceToTarget = (localY - parseFloat(previousWidth));
+    let distanceToTarget = (localY - parseFloat(previousMargin));
 
-    let newHeight = parseFloat(previousWidth) + distanceToTarget * lerpFactor;
+    let newMargin = parseFloat(previousMargin) + distanceToTarget * lerpFactor;
 
-    if (newHeight < 11) {
-        newHeight = 11;
+    if (newMargin < 11) {
+        newMargin = 11;
     }
-    if (newHeight > 332) {
-        newHeight = 332;
+    if (newMargin > 332) {
+        newMargin = 332;
     }
 
-    borderObject.style.marginTop = newHeight + "px";
+    borderObject.style.marginTop = newMargin + "px";
 
-    overlay.style.filter = "hue-rotate(" + (newHeight / colorSelector.clientHeight * 360) + "deg)"
+    overlay.style.filter = "hue-rotate(" + (newMargin / colorSelector.clientHeight * 360) + "deg)"
 
     lastTime = Date.now();
 }
