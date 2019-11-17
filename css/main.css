@@ -313,6 +313,50 @@ input[type=submit]:hover{
     height: calc(100vh - 110px);
 }
 
+#overlay-product-image {
+    position: absolute;
+    width: 100%;
+
+    background-image: url("../images/product-1-o.png");
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+
+    /* filter:hue-rotate(90deg); */
+
+    height: calc(100vh - 110px);
+}
+
+#product-color-selector {
+    float: right;
+
+    margin-top: 10px;
+    margin-right: 40px;
+
+    width: 25px;
+    height: 60%;
+
+    background: linear-gradient(to bottom,hsl(0,100%,50%),hsl(60,100%,50%),hsl(120,100%,50%),hsl(180,100%,50%),hsl(240,100%,50%),hsl(300,100%,50%),hsl(360,100%,50%));
+
+    border-radius: 50px;
+}
+
+#product-color-selection-area {
+    position: absolute;
+
+    width: 25px;
+    height: 60%;
+}
+
+#color-selector-border {
+    position: absolute;
+    width: 25px;
+
+    margin-top: 20px;
+
+    border-bottom: 10px solid black;
+}
+
 .product-preview-button {
     position: absolute;
     bottom: 50px;
