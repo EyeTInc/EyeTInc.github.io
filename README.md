@@ -10,7 +10,7 @@ Ivan Zeljkovic @idzidz - 300092334
 
 Ovais Azeem @Ovais09 - 300112311
 
-Ajay Ramachandran @ajayyy - 300109765
+Ajay Ramachandran @ajayyy - 
 
 Rachel Jamer @racheljamer - 0300116564
 
