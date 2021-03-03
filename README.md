@@ -8,7 +8,7 @@ https://EyeTInc.github.io
 
 Ivan Zeljkovic @idzidz - 300092334
 
-Ovais Azeem @Ovais09 - 300112311
+Ovais Azeem @Ovais09 - 
 
 Ajay Ramachandran @ajayyy - 
 
